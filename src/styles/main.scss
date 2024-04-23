@@ -1,0 +1,28 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../styles/variables.scss";
+@import "../styles/material-redefined.scss";
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: $font-size-default !important;
+}
+
+.page-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
+}
+
+.content-body {
+
+}
+
+.page-title {
+  font-family: $font-family-secondary;
+  font-size: 24px;
+}

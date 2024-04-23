@@ -1,0 +1,10 @@
+<div class="w-100 d-flex flex-column mb-4">
+  <div class="logo">
+    <span class="page-title">RxJs</span>
+  </div>
+</div>
+<nav mat-tab-group class="d-flex navigation-panel">
+  @for (tabLink of navLinks; track tabLink.link) {
+    <a mat-tab class="nav-item" [routerLink]="tabLink.link" routerLinkActive="active"> {{ tabLink.label }} </a>
+  }
+</nav>
